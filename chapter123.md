@@ -40,30 +40,29 @@ linear classifier: f(x,W)=Wx+b. It can't deal with a complex classification prob
 
 # Lecture 3 | Loss Functions and Optimization
 
-the definition of loss function and optimazation
+the definition of loss function and optimization
 
 optimization: walk in a valley. There are some strategies:
-<ol>
-<li>Random search. 
-`bestloss=float("inf")`
 
-	`for num in xrange(1000):`
+1. Random search. 
 
-		`W=np.random.randn(10,3073)*0.0001`
+```python
+bestloss=float("inf")
+for num in xrange(1000):
+
+	W=np.random.randn(10,3073)*0.0001 #update w randomly 
+	
+	loss=L(X_train,Y_train,W)
 		
-		`loss=L(X_train,Y_train,W)`
-			
-		`if loss<bestloss:`
-			
-		`bestloss=loss`
-			
-		`bestW=W`
-</li>
+	if loss<bestloss:
+		
+	bestloss=loss
+		
+	bestW=W
+```
 
-</ol>
 
  
-
 
 
 
