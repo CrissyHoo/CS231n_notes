@@ -46,14 +46,14 @@ optimization: walk in a valley. There are some strategies:
 <ol>
 <li>Random search. 
 ```python
-    bestloss=float("inf")
+bestloss=float("inf")
 	for num in xrange(1000):
 		W=np.random.randn(10,3073)*0.0001
 		loss=L(X_train,Y_train,W)
 		if loss<bestloss:
 			bestloss=loss
 			bestW=W
-    ```
+```
 
 </li>
 
