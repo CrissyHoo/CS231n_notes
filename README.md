@@ -1,2 +1,3 @@
 # CS231n_notes
-the notes when watching CS231n
+the notes when learning CS231n
+
