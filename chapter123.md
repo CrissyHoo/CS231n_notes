@@ -68,9 +68,9 @@ for num in xrange(1000):
    In 1-dimension, it's a single value. In multiple dimension, the gradient is a vector. 
 
    The process: We get a current weight. We add an "h" to the weight. Then we calculate the loss respectively. The gradient is 
-   $$
+   $
    \frac{df(x)}{dx}=\lim\limits_{h\to0}{\frac{f(x+h)-f(x)}{h}}
-   $$
+   $
     The f(x) is just the loss function. After getting the slope, we can use slope to adjust the directions we update the weights.
 
    which is super slow and super bad.
