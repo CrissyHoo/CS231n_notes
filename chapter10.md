@@ -14,17 +14,17 @@ having a hidden state that feeds back at itself.
 
 In this network, there can be many middle result, and this can be used to deal with different problems, such as many to one and one to many problem.
 
-![](https://i.loli.net/2021/05/15/QCfbHxZNJm7DG9j.png)
+![a picture here](https://i.loli.net/2021/05/15/QCfbHxZNJm7DG9j.png)
 
 backpropagation in recurrent network
 
-![](https://i.loli.net/2021/05/15/xTJnp8FEdqXLQaK.png)
+![a picture here](https://i.loli.net/2021/05/15/xTJnp8FEdqXLQaK.png)
 
 quote detection, generate paper, code, proof and so on.
 
  LSTM（long short term memory）
 
-![](https://i.loli.net/2021/05/15/32lebzBhjNHsd6p.png)
+![a picture here](https://i.loli.net/2021/05/15/32lebzBhjNHsd6p.png)
 
 helps with the problem of vanishing and exploding gradients.
 
@@ -44,11 +44,11 @@ uninterrupted gradient flow.
 
 **一般的RNN**
 
-![](https://i.loli.net/2021/05/15/M3UfrEmdaGwogsj.jpg)
+![a picture here](https://i.loli.net/2021/05/15/M3UfrEmdaGwogsj.jpg)
 
 x, y为当前节点的输入输出，h为接收到的上一个节点的输入，h撇为给下一个节点的输入。
 
-![](https://i.loli.net/2021/05/15/cPB5mRwX4fkdaol.jpg)
+![a picture here](https://i.loli.net/2021/05/15/cPB5mRwX4fkdaol.jpg)
 
 对于每一个节点来说，y和h撇是关于h和x的函数。
 
@@ -56,7 +56,7 @@ x, y为当前节点的输入输出，h为接收到的上一个节点的输入，
 
 它其实是RNN的变体，为了解决长序列训练过程中梯度消失和梯度爆炸的问题。与RNN相比，LSTM能够在较长的序列上表现得更好。
 
-![](https://i.loli.net/2021/05/15/CpkUMotBb1z8ewE.jpg)
+![a picture here](https://i.loli.net/2021/05/15/CpkUMotBb1z8ewE.jpg)
 
 这个是LSTM和简单的RNN的比较。
 
@@ -68,9 +68,9 @@ LSTM在状态传输方面，包含有h_t(hidden state)，还有一个隐藏的c_
 
 对于LSTM的任一状态，构造一定的关系，这个关系的输入是x_t和上一个状态传递下来的h_t-1,我们可以得到四个状态。
 
-![](https://i.loli.net/2021/05/15/xSnEZiFmyI3efGk.jpg)
+![a picture here](https://i.loli.net/2021/05/15/xSnEZiFmyI3efGk.jpg)
 
-![](https://i.loli.net/2021/05/15/zTDIlQum4Gi8MtV.jpg)
+![a picture here](https://i.loli.net/2021/05/15/zTDIlQum4Gi8MtV.jpg)
 
 我们可以看到后三个状态最后都经过了sigmoid函数的处理，这个函数会把值转换到0到1之间，所以我们会在LSTM中听说“门”这个概念。而里面的输入就是concatenation后乘以权重矩阵。
 
@@ -78,7 +78,7 @@ z有略微的不同，z是通过tanh函数来进行激活的，处理后的值�
 
 然后就回到LSTM中有四个状态，分别就是图中的几个z，然后贴一张和cs231其实有重复部分的图。这里描绘的是每一个单元的操作。
 
-![](https://i.loli.net/2021/05/15/lmouxt58brMaFsj.jpg)
+![a picture here](https://i.loli.net/2021/05/15/lmouxt58brMaFsj.jpg)
 
 ⊙是Hadamard Product，将矩阵中对应的元素相乘，相乘的两矩阵size需要一致。⊕代表矩阵加法。
 
@@ -100,7 +100,7 @@ LSTM的三个阶段
 
    以上参考
 
-   []: https://zhuanlan.zhihu.com/p/32085405	"人人都能看懂的LSTM"
+  https://zhuanlan.zhihu.com/p/32085405
 
    
 
